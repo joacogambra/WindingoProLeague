@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body{
+    background-color: #212529;
+}
+
+header{
+    background-image: url(./Logos-Banners/Bannerwpl.png);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    width: 100%;
+    min-height: 30vh;
+    box-shadow: 1px 3px 10px black;
+}
+
+header h1{
+    color: rgba(255, 255, 255, 0.03);
+    letter-spacing: 3px;
+}
+.browser{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.browser a{
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #1c3524 ;
+    color: rgba(240, 248, 255, 0.644);
+    margin: 0px 10px;
+    border-radius: 1mm 1mm 0mm 0mm;
+}
+
+.browser a:hover{
+    color: rgba(240, 248, 255, 1);
+}
+
+.href{
+    padding: 10px;
+}
+
+.container{
+    background-color: #212529;
+    min-height: 57vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    
+}
+
+.card {
+    width: 290px;
+    height: 320px;
+    background: #212529;
+    overflow: visible;
+    box-shadow: 0 5px 20px 2px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1mm;
+   }
+   
+   .card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0 1rem;
+   }
+   
+   .card-img {
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background: #42caff;
+    background: linear-gradient(to bottom, #42caff 0%, #e81aff 100%);
+    position: relative;
+    transition: all .3s ease-in-out;
+   }
+   
+   .card-img::before {
+    border-radius: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+   }
+   
+   .text-title {
+    text-transform: uppercase;
+    font-size: 0.95em;
+    color: #a4a8a9;
+    letter-spacing: 0.05rem;
+   }
+   
+   .text-body {
+    font-size: 0.85em;
+    text-align: center;
+    color: #6f6d78;
+    font-weight: 400;
+    font-style: italic;
+   }
+
+   .ligas{
+    color: #6f6d78;
+    font-weight: 400;
+    font-style: italic;
+   }
+   
+   .card:hover .card-img {
+    --size: 110px;
+    width: var(--size);
+    height: var(--size);
+   }
+
+   .card:hover{
+    box-shadow: 0 5px 20px 2px rgba(255, 255, 255, 0.305);
+   }
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 8vh;
+}
+
+.redondos{
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: #1c3524 ;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    margin: 0rem 2rem 0rem;
+}
+
+.buttons a svg{
+    margin-top: 20%;
+}
+  
+.buttons a:hover {
+    transform: scale(1.2);
+}
